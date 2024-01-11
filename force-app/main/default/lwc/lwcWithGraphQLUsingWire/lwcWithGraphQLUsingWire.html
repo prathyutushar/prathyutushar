@@ -1,0 +1,15 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="Contacts POC" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <c-custom-data-table-type
+                key-field="Id"
+                data={contacts}
+                columns={cols}
+                onsave={handleSave}
+                draft-values={draftValues}
+                oncellchange={handleCellChange}
+            ></c-custom-data-table-type>
+        </div>
+    </lightning-card>
+</template>
